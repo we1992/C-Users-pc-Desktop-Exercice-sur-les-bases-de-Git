@@ -1,0 +1,80 @@
+Microsoft Windows [version 10.0.17763.1282]
+(c) 2018 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\pc\Desktop\learn_git_again>git init
+Initialized empty Git repository in C:/Users/pc/Desktop/learn_git_again/.git/
+
+C:\Users\pc\Desktop\learn_git_again>git add third.txt
+
+C:\Users\pc\Desktop\learn_git_again>git commit -m"adding third.txt"
+[master (root-commit) 9cf4a12] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\pc\Desktop\learn_git_again>git log
+commit 9cf4a1283a93629bf12e9990ca170f7dfe7f750f (HEAD -> master)
+Author: we1992 <wej.bedoui2020@gmail.com>
+Date:   Wed Jul 8 00:51:19 2020 +0200
+
+    adding third.txt
+
+C:\Users\pc\Desktop\learn_git_again>git add fourth.txt
+
+C:\Users\pc\Desktop\learn_git_again>git commit -m"adding fourth.txt"
+[master 1c270a4] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\pc\Desktop\learn_git_again>git rm third.txt
+rm 'third.txt'
+
+C:\Users\pc\Desktop\learn_git_again>git commit -m"removing third.txt"
+[master e498155] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\pc\Desktop\learn_git_again>git log
+commit e498155de48d30a65cb64202be40781c85037c86 (HEAD -> master)
+Author: we1992 <wej.bedoui2020@gmail.com>
+Date:   Wed Jul 8 00:57:40 2020 +0200
+
+    removing third.txt
+
+commit 1c270a4d942340b10174c5ee8cb8dd6960c7a885
+Author: we1992 <wej.bedoui2020@gmail.com>
+Date:   Wed Jul 8 00:54:44 2020 +0200
+
+    adding fourth.txt
+
+commit 9cf4a1283a93629bf12e9990ca170f7dfe7f750f
+Author: we1992 <wej.bedoui2020@gmail.com>
+Date:   Wed Jul 8 00:51:19 2020 +0200
+
+    adding third.txt
+
+C:\Users\pc\Desktop\learn_git_again>git config --global core.pager "cat"
+
+C:\Users\pc\Desktop\learn_git_again>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+user.email=wej.bedoui2020@gmail.com
+user.name=we1992
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\pc\Desktop\learn_git_again>
